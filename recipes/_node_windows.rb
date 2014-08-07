@@ -32,6 +32,9 @@ directory home_dir do
   action :create
 end
 
+chef_gem 'ruby-wmi'
+require 'ruby-wmi'
+
 env 'JENKINS_HOME' do
   action :create
   value home_dir

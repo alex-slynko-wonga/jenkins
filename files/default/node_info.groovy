@@ -46,7 +46,6 @@ else {
   node = [
     "name" : slave.name,
     "description" : slave.nodeDescription,
-    "remote_fs" : slave.remoteFS,
     "executors" : slave.numExecutors.toInteger(),
     "mode" : slave.mode.toString(),
     "labels" : slave.labelString,
